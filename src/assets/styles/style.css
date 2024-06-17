@@ -85,11 +85,11 @@ button {
     
 }
 .text {
-    display: inline-block;
+   
     width: 400px;
     height: 200px;
     margin: 10px;
-    vertical-align: middle;
+   
     padding-top: 20px;
 }
 
