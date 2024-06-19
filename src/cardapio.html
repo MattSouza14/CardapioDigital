@@ -29,20 +29,67 @@
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
+        <div class="offcanvas-body  ">
+            <h2>Meu Carrinho</h2>
+            <!-- <div class="d-flex flex-direction-column">
+                <div class="carrinhoboxburguer ">
+                    <div class="carrinhoimg">
+                        <img src="/src/assets/img/burger02.png" alt="" class="carrinhoimg">
+                    </div>
+                    <div class="carrinhodescri">
+                        <h3 class="fs-5">Gourmet Burger</h3>
+                        
+                            <h4 class="text-dark" >Preço: <strong  class="text-dark">R$35,00</strong></h4>
+                    </div>
+
+                    <div class="carrinhoimg">
+                        <img src="/src/assets/img/acomp01.png" alt="" class="carrinhoimg">
+                    </div>
+                    <div class="carrinhodescri">
+                        <h3 class="fs-5">Fritas</h3>
+                       
+                            <h4 class="text-dark">Preço: <strong  class="text-dark">R$15,00</strong> </h4>
+                    </div>
+
+                    <div class="carrinhoimg">
+                        <img src="/src/assets/img/bebida02.png" alt="" class="carrinhoimg">
+                    </div>
+                    <div class="carrinhodescri">
+                        <h3 class="fs-5">Spriter</h3>
+                        
+                            <h4 class="text-dark">Preço:<strong>R$5,00</strong></h4>
+                    </div>
+                </div> -->
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="/src/assets/img/burger02.png" class="logocar" alt="Gourment Burguer">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body text-start">
+                          <h5 class="card-title text-dark fs-5">Gourmet Burger</h5>
+                          <h6 class="card-text text-dark fs-5">Total: R$35,00</h6>
+                          <div class="d-flex">
+                            <button class="btn btn-warning btn-sm ml-5">+</button>
+                            <input type="number" class="text-dark w-75 mx-3" value="1">
+                            <button class="btn btn-warning btn-sm">-</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                <!-- <div class="pagar">
+                    <h4 class="text-dark">Total carrinho : <strong class="text-dark">R$45,00</strong></h4>
+                    <button>Pagar</button>
+                    <button>+</button>
+                    <button>-</button>
+
+                </div> -->
+                
+            </div>
         </div>
       </div>
 
@@ -53,10 +100,10 @@
             <h2 class="mainSub">HAMBURGUERES</h2>
             <div class="produto">
                 <div class="logo">
-                    <img src="/src/assets/img/burger01.png" alt="Hambúrguer Angus Burger">
+                    <img src="/src/assets/img/burger01.png" alt="Hambúrguer Angus Burger" class="logo">
                 </div>
                 <div class="text">
-                    <h1>Clássico Angus Burger - <strong>R$22,50</strong></h1><!-- Alterar depois para h3 -->
+                    <h3>Clássico Angus Burger - <strong>R$22,50</strong></h3><!-- Alterar depois para h3 -->
                     <p>Delicie-se com o nosso Hambúrguer Clássico, feito com um suculento hambúrguer de carne angus, queijo derretido, alface crocante, tomate fresco e
                          um toque especial do nosso molho secreto. Perfeito para saciar sua fome! </p>
                         <button class="btn">Pedir</button>
@@ -64,10 +111,10 @@
             </div>
             <div class="produto">
                 <div class="logo">
-                    <img src="/src/assets/img/burger02.png" alt="Gourmet Burger">
+                    <img src="/src/assets/img/burger02.png" alt="Gourmet Burger" class="logo">
                 </div>
                 <div class="text">
-                    <h1>Gourmet Burger - <strong>R$35,00</strong></h1><!-- Alterar depois para h3 -->
+                    <h3>Gourmet Burger - <strong>R$35,00</strong></h3><!-- Alterar depois para h3 -->
                     <p>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, 
                         cebola caramelizada e baccon. Uma escolha irresistível!  </p>
                         <button class="btn">Pedir</button>
@@ -76,10 +123,10 @@
             </div>
                 <div class="produto">
                     <div class="logo">
-                        <img src="/src/assets/img/burger03.png" alt="Defumado BBQ Burger">
+                        <img src="/src/assets/img/burger03.png" alt="Defumado BBQ Burger" class="logo">
                     </div>
                     <div class="text">
-                        <h1>Defumado BBQ Burger - <strong>R$29,00</strong></h1><!-- Alterar depois para h3 -->
+                        <h3>Defumado BBQ Burger - <strong>R$29,00</strong></h3><!-- Alterar depois para h3 -->
                         <p>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo 
                             cheddar derretido, cebola caramelizada e salada verde.  </p>
                             <button class="btn">Pedir</button>
@@ -93,10 +140,10 @@
         <section id="acompanhamentos">
             <div class="produto">
                 <div class="logo">
-                    <img src="/src/assets/img/acomp01.png" alt="Fritas">
+                    <img src="/src/assets/img/acomp01.png" alt="Fritas" class="logo">
                 </div>
                 <div class="text">
-                    <h1>Fritas - <strong>R$15,00</strong></h1><!-- Alterar depois para h3 -->
+                    <h3>Fritas - <strong>R$15,00</strong></h3><!-- Alterar depois para h3 -->
                     <p>Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, 
                         elas são irresistíveis em cada mordida. </p>
                         <button class="btn">Pedir</button>
@@ -108,10 +155,10 @@
         <section id="bebidas">
         <div class="produto">
             <div class="logo">
-                <img src="/src/assets/img/bebida01.png" alt="Coca-Cola">
+                <img src="/src/assets/img/bebida01.png" alt="Coca-Cola" class="logo">
             </div>
             <div class="text">
-                <h1>Coca-Cola - <strong>R$5,00</strong></h1><!-- Alterar depois para h3 -->
+                <h3>Coca-Cola - <strong>R$5,00</strong></h3><!-- Alterar depois para h3 -->
                 <p>Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.
                 </p>
                     <button class="btn">Pedir</button>
@@ -119,10 +166,10 @@
         </div>
         <div class="produto">
             <div class="logo">
-                <img src="/src/assets/img/bebida02.png" alt="Sprite">
+                <img src="/src/assets/img/bebida02.png" alt="Sprite" class="logo">
             </div>
             <div class="text">
-                <h1>Sprite - <strong>R$5,00</strong></h1><!-- Alterar depois para h3 -->
+                <h3>Sprite - <strong>R$5,00</strong></h3><!-- Alterar depois para h3 -->
                 <p>Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.</p>
                 <button class="btn">Pedir</button>
             </div>

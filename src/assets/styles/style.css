@@ -45,7 +45,7 @@ header img {
     text-transform: uppercase;
 }
 
-a {
+header a {
     margin: 0 10px;
     text-decoration: none;
 }
@@ -56,13 +56,12 @@ body {
 }
 
 h1, h2, h3, p, button {
-    margin: 10px 0;
+   margin: 12px 0 ;
+   
  
 }
 
-
-
-h2 {
+h2, h3 {
     color: var(--btnh2textoColor);
 }
 button {
@@ -80,7 +79,7 @@ button {
 }
 
 
-.logo img {
+.logo {
     width: 400px;
     
 }
@@ -93,7 +92,7 @@ button {
     padding-top: 20px;
 }
 
-.btn{
+.boxprodutor .btn{
     width: 150px;
     background-color: var(--btnh2textoColor);
     border: none;
@@ -102,7 +101,11 @@ button {
     padding: 10px;
     cursor: pointer;
 }
-
-.btn:hover {
+.boxproduto .btn{
     background-color:var(--btncolorhover);
+}
+
+.logocar {
+    width: 125px;
+    height: 120px;
 }
