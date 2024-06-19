@@ -74,6 +74,7 @@ button {
     background-color: var(--backgroundColor);
     border-radius: var(--bordas);
     width: 890px;
+    height: 300px;
     text-align: justify;
     border-radius: 10px;
 }
@@ -92,17 +93,18 @@ button {
     padding-top: 20px;
 }
 
-.boxprodutor .btn{
+button{
     width: 150px;
     background-color: var(--btnh2textoColor);
     border: none;
-    border-radius:var(--bordas);
+    border-radius:10px;
     /* text-align: center; */
     padding: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
-.boxproduto .btn{
-    background-color:var(--btncolorhover);
+button:hover{
+    background-color:rgb(94, 65, 3);
 }
 
 .logocar {
