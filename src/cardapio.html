@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/assets/styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -205,13 +207,66 @@
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title text-dark" id="exampleModalLabel">Detalhes do produto: </h5>
+                   <div class="modal-header"> 
+                      <h5 class="modal-title text-dark" id="exampleModalLabel">Ingredientes: </h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                    </div> 
                     <div class="modal-body">
-                        <h6 class="text-dark">Pão com gergelim, carne Agnus 90g, Queijo, Molho secreto, Bacon, Alface e Tomate</h6>
+                      <div>
+                        <div id ="ingredientesProduto1 ">
+                         <div class="row p-2 align-items-center border">
+                          <img src="/src/assets/img/pao.png" alt="" class="img-fluid col">
+                          <h6 class="col-8 text-dark text-center ">Pão </h6>
+                          <button class="col btn btn-danger btn-sm ">Remover</button> 
+                        </div>
+                        <div class="row p-2 align-items-center border">
+                          <img src="/src/assets/img/bacon.png" alt="" class="img-fluid col">
+                          <h6 class="col-8 text-dark text-center ">Bacon</h6>
+                          <button class="col btn btn-danger btn-sm ">Remover</button>
+                      </div>
+                      <div class="row p-2 align-items-center border">
+                        <img src="/src/assets/img/queijo.png" alt="" class="img-fluid col">
+                        <h6 class="col-8 text-dark text-center ">Queijo</h6>
+                        <button class="col btn btn-danger btn-sm ">Remover</button>
+                      </div>
                     </div>
+                  </div>
+
+                    <div class="border" id="adicionaisProduto1">
+                      <h5 class="text-dark">Adicionais </h5>
+                    
+                
+                    <h6 class="text-dark fs-6">
+                    <i class="fa-solid fa-burger text-dark"></i>Carne Agnus: R$5,00
+                    </h6>
+                    <div class="d-flex">
+                      <button class="btn btn-warning btn-sm ml-5">+</button>
+                      <input type="number" class="w-75 mx-3 text-dark text-center " value="0">
+                      <button class="btn btn-warning btn-sm">-</button>
+                    </div>
+                      
+                      <h6>
+                        <i class="fa-solid fa-bacon text-dark"></i>Bacon: R$2,50
+                      </h6> 
+                    <div class="d-flex">
+                      <button class="btn btn-warning btn-sm ml-5">+</button>
+                      <input type="number" class="w-75 mx-3 text-dark text-center " value="0">
+                      <button class="btn btn-warning btn-sm">-</button>
+                    </div>
+        
+                      <h6>
+                        <i class="fa-solid fa-cheese text-dark"></i>Queijo: R$2,00
+                      </h6>
+                    <div class="d-flex">
+                      <button class="btn btn-warning btn-sm ml-5">+</button>
+                      <input type="number" class="w-75 mx-3 text-dark text-center " value="0">
+                      <button class="btn btn-warning btn-sm">-</button>
+                    </div>
+                  <div id="totalAdicionais" class="mt-4">
+                    <h6 class="text-dark">Total adicionado: <strong class="text-dark">R$9,50</strong></h6>
+                  </div>
+
+                  </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                       <button type="button" class="btn btn-primary">Adicionar ao carrinho</button>
@@ -219,6 +274,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+              
               
 
             <div class="produto">
@@ -247,9 +304,8 @@
                     </div>
 
                 </div>
-                
-            
         </section>
+
         <h2 class="mainSub">ACOMPANHAMENTOS</h2>
         <section id="acompanhamentos">
             <div class="produto">
